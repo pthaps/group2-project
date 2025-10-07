@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberLearn - Interactive Security Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🛡️ CyberLearn</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#practice">Practice</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Master Cybersecurity</h1>
+            <p>Interactive lessons, hands-on challenges, and real-world scenarios</p>
+        </section>
+
+        <!-- Stats Panel -->
+        <section class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-number" id="completed-lessons">0</div>
+                <p>Lessons Completed</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="quiz-score">0%</div>
+                <p>Average Score</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="streak">0</div>
+                <p>Day Streak</p>
+            </div>
+        </section>
+
+        <!-- Topics Grid -->
+        <section class="topics-grid" id="topics-grid">
+            <div class="topic-card" data-topic="phishing">
+                <div class="topic-icon">🎣</div>
+                <h3>Phishing Attacks</h3>
+                <p>Learn to identify and prevent phishing attempts</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="topic-card" data-topic="passwords">
+                <div class="topic-icon">🔐</div>
+                <h3>Password Security</h3>
+                <p>Best practices for creating and managing passwords</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="topic-card" data-topic="malware">
+                <div class="topic-icon">🦠</div>
+                <h3>Malware Defense</h3>
+                <p>Understand different types of malware and protection</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="topic-card" data-topic="network">
+                <div class="topic-icon">🌐</div>
+                <h3>Network Security</h3>
+                <p>Secure your network from unauthorized access</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="topic-card" data-topic="encryption">
+                <div class="topic-icon">🔒</div>
+                <h3>Encryption</h3>
+                <p>Learn how encryption protects your data</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="topic-card" data-topic="social">
+                <div class="topic-icon">👥</div>
+                <h3>Social Engineering</h3>
+                <p>Recognize manipulation tactics and defend against them</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quiz-section">
+            <button class="back-btn" id="back-btn">← Back to Topics</button>
+            <h2 id="quiz-title">Quiz</h2>
+            <div id="quiz-content"></div>
+        </section>
+    </main>    
+
+    <script src="script.js"></script>
+</body>
+</html>
